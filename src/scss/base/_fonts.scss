@@ -1,11 +1,50 @@
 /**
  * Fonts
 */
+@font-face {
+    font-family: 'poppins';
+    src: url('/src/fonts/poppins_bold.woff2') format('woff2'),
+         url('/src/fonts/poppins_bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
 
 @font-face {
-  font-family: 'DINP-R';
-  src: url("../fonts/DINPro-Regular.eot?") format("eot"),
-  url("../fonts/DINPro-Regular.woff") format("woff"),
-  url("../fonts/DINPro-Regular.ttf") format("truetype");
-  font-style: normal;
+    font-family: 'poppins';
+    src: url('/src/fonts/poppins_extrabold.woff2') format('woff2'),
+         url('/src/fonts/poppins_extrabold.woff') format('woff');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('/src/fonts/poppins_semibold.woff2') format('woff2'),
+         url('/src/fonts/poppins_semibold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('/src/fonts/poppins_regular.woff2') format('woff2'),
+         url('/src/fonts/poppins_regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('/src/fonts/poppins_light.woff2') format('woff2'),
+         url('/src/fonts/poppins_light.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('/src/fonts/poppins_medium.woff2') format('woff2'),
+         url('/src/fonts/poppins_medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
 }
