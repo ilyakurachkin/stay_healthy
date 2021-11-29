@@ -1,57 +1,57 @@
 .welcome-club {
-    background-color: #161D2F;
+    background-color: $background-color;
     padding-top: 55px;
-   
+
+    &__line {
+        &:nth-child(1) {
+            width: 80%;
+            display: inline-block;
+        }
+        &:nth-child(2) {
+            width: 80%;
+            display: inline-block;
+        }
+        &:nth-child(3) {
+            width: 50%;
+            display: inline-block;
+        }
+    }
    
     &__title {
         text-align: center;
-        font-weight: 400;
+        font-weight: $font-weight-regular;
         font-size: 14px;
-        line-height: 21px;
-        color: #ffffff;
+        line-height: 1.5;
+        color: $white;
         text-transform: uppercase;
         margin-bottom: 10px;
     }
     &__subtitle {    
         text-align: center;
-        font-weight: 700;
+        font-weight: $font-weight-bold;
         font-size: 62px;
-        line-height: 150%;
-        color: #ffffff;
+        line-height: 1.6;
+        color: $white;
         margin-bottom: 20px;
     }
-    &__descr {
+    &__desc {
         width: 62%;
         margin: 0 auto;
         margin-bottom: 30px;
-    }
-    &__text {
         text-align: center;
-        font-weight: 300;
+        font-weight: $font-weight-light;
         font-size: 15px;
-        line-height: 30px;
+        line-height: 2;
         text-transform: capitalize;
-        color: #ffffff;
+        color: $white;
     }
-    &__btn {
-        margin: 0 auto;
-        width: 30%;
+    &__buttons-wrapper {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-    }
-    &__button {
-        display: inline-flex;
         justify-content: center;
-        align-items: center;
-        width: 157px;
-        height: 53px;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 27px;
-        text-transform: capitalize;
-        color: #ffffff;
-        border-radius: 28px;
-        border: 1px solid #ffffff;
+        margin-bottom: 30px;
+            &>a:not(:last-child){
+                margin-right: 40px;
+            }    
     }
+    
 }

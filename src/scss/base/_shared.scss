@@ -1,0 +1,29 @@
+
+.container {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.main-button {
+    display: inline-flex;
+    min-width: 157px;
+    padding: 12px 10px;
+    background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
+    border-radius: 28px;
+    font-weight: $font-weight-medium;
+    font-size: 18px;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: $white;
+
+    &--inverst {
+        font-weight: $font-weight-light;
+        border-radius: 28px;
+        border: 1px solid $white;
+        background: none;
+    }
+}
+
