@@ -1,18 +1,22 @@
 
 .header {
     padding: 12px 0;
-    background-color: $background-color;
+    background-color: $dark-blue; 
    
-    &__wrapper {
+    &__container {
         display: flex;
         justify-content: space-between;
-        align-items: center;    
+        align-items: center; 
+    }
+
+    &__navigation {
+        margin: 15px;
     }
 
     &__logo {
         &-link{  
             font-weight: $font-weight-extrabold;
-            font-size: 24px;
+            font-size: $font-size-lg;
             line-height: 1.5;
             color: $white;
         }

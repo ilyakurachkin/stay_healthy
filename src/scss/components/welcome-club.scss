@@ -1,7 +1,7 @@
 .welcome-club {
-    background-color: $background-color;
-    padding-top: 55px;
-
+    background-color: $dark-blue ;
+    padding: 55px 0 50px;
+    
     &__line {
         &:nth-child(1) {
             width: 80%;
@@ -19,17 +19,13 @@
    
     &__title {
         text-align: center;
-        font-weight: $font-weight-regular;
-        font-size: 14px;
-        line-height: 1.5;
         color: $white;
-        text-transform: uppercase;
         margin-bottom: 10px;
     }
     &__subtitle {    
         text-align: center;
         font-weight: $font-weight-bold;
-        font-size: 62px;
+        font-size: $font-size-xll;
         line-height: 1.6;
         color: $white;
         margin-bottom: 20px;
@@ -40,7 +36,7 @@
         margin-bottom: 30px;
         text-align: center;
         font-weight: $font-weight-light;
-        font-size: 15px;
+        font-size: $font-size-sm-l;
         line-height: 2;
         text-transform: capitalize;
         color: $white;

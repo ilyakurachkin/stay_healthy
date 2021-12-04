@@ -1,8 +1,16 @@
 
 .container {
     width: 100%;
-    max-width: 1110px;
+    max-width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-weight: $font-weight-regular;
+    font-size: $font-size-sm;
+    line-height: 1.5;
+    text-transform: uppercase;
 }
 
 .main-button {
@@ -12,14 +20,14 @@
     background: linear-gradient(97.1deg, #3043A9 11.99%, #1F629F 96.6%);
     border-radius: 28px;
     font-weight: $font-weight-medium;
-    font-size: 18px;
+    font-size: $font-size-md;
     line-height: 1.5;
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
     color: $white;
 
-    &--inverst {
+    &--inverse {
         font-weight: $font-weight-light;
         border-radius: 28px;
         border: 1px solid $white;

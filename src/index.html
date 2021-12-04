@@ -10,28 +10,26 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__inner"> <!-- Пробывал через header мешал тег container, пришлось добавить inner-->
-        <div class="header__logo">
-          <a href="#" class="header__logo-link">StayHealthy</a>
-        </div>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Program</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Nutritions</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Pricing</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="main-button">Join Now</a>
+    <div class="container header__container">
+      <div class="header__logo">
+        <a href="#" class="header__logo-link">StayHealthy</a>
       </div>
+      <nav class="navigation header__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Program</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Nutritions</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Pricing</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="main-button">Join Now</a>
     </div>
   </header>
   <main class="main">
-    <section class="welcome-club">
+    <section class="welcome-club main__welcome-club">
       <div class="container">
-        <h1 class="welcome-club__title">welcom to the club</h1>
+        <h1 class="title welcome-club__title">welcom to the club</h1>
         <h2 class="welcome-club__subtitle">
           <span class="welcome-club__line">Choose Your Programs,</span>
           <span class="welcome-club__line">Pick Your Meal,</span>
@@ -43,10 +41,59 @@
           training model that can be accessed anytime and anywhere with
           the best trainers.</p>
         <div class="welcome-club__buttons-wrapper">
-          <a href="#" class="main-button">Join Now</a> 
-          <a href="#" class="main-button main-button--inverst">Contact Us</a>
+          <a href="#" class="main-button">Join Now</a>
+          <a href="#" class="main-button main-button--inverse">Contact Us</a>
         </div>
         <video src="#" width="1110" height="600" controls="controls" poster="images/content/video_img.png"></video>
+      </div>
+    </section>
+    <section class="programs-workouts main__programs-workouts">
+      <div class="container">
+        <h2 class="title programs-workouts__title">programs</h2>
+        <h3 class="programs-workouts__subtitle">We Have a programs to help your workouts</h3>
+        <div class="programs-workouts__row">
+          <div class="programs-workouts__col">
+            <div class="card">
+              <img src="images/content/workout_1.png"  width="#" height="#" alt="#" class="card__img">
+              <h2 class="card__title">Full Body Workout</h2>
+              <h3 class="card__subtitle">By The Rock</h3>
+              <p class="card__desc">
+                You can do it in your own home, all in under 30 mins? just need a mat and som . . .
+              </p>
+              <a href="#" class="card__link">Check out this program! <img src="images/content/Vector.svg" alt="#" class="card__link__vector">
+
+                </a>
+            </div>
+          </div>
+          <div class="programs-workouts__col"> 
+            <div class="card">
+              <img src="images/content/workout_2.png"  width="#" height="#" alt="#" class="card__img">
+              <h2 class="card__title">Bodyweight Workout</h2>
+              <h3 class="card__subtitle">By Timi Tarner</h3>
+              <p class="card__desc">
+                No need equipments, just your body, your soul, and your spirit. You can do . . .
+              </p>
+              <a href="#" class="card__link">Check out this program! <svg style="margin-left: 15px;" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-0.000213134 7.83332L14.6548 7.83332L10.2439 12.2442L11.4223 13.4225L17.8448 6.99999L11.4223 0.577485L10.2439 1.75582L14.6548 6.16665L-0.000212989 6.16665L-0.000213134 7.83332Z" fill="#3043A9"/>
+                </svg>
+                </a>
+            </div>
+          </div>
+          <div class="programs-workouts__col">
+            <div class="card">
+              <img src="images/content/workout_3.png"  width="#" height="#" alt="#" class="card__img">
+              <h2 class="card__title">Dumbell Workout</h2>
+              <h3 class="card__subtitle">By Frank Jane</h3>
+              <p class="card__desc">
+                This is a workout you can do at home just using a set of barbells. The workout is . . .
+              </p>
+              <a href="#" class="card__link">Check out this program! <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M-0.000213134 7.83332L14.6548 7.83332L10.2439 12.2442L11.4223 13.4225L17.8448 6.99999L11.4223 0.577485L10.2439 1.75582L14.6548 6.16665L-0.000212989 6.16665L-0.000213134 7.83332Z" fill="#3043A9"/>
+                </svg>
+                </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
