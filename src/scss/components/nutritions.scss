@@ -1,0 +1,63 @@
+.nutritions {
+    
+    &__container {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        width: 42%;
+        transform: translateY(71px);
+    }
+
+    &__images {
+        width: 65%;
+
+        &__picture-1 {
+            position: relative;
+            z-index: 1;
+            bottom: 15px;
+            right: 23px;
+        }
+        
+        &__picture-2 {
+            position: relative;           
+            bottom: 111px;
+            left: 103px;
+        }
+        
+        &__picture-3 {
+            position: relative;   
+            bottom: 178px;               
+        }
+        
+        &__picture-4 {
+            position: relative;                         
+            left: 382px;
+            bottom: 258px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-weight: $font-weight-semibold;
+        font-size: $font-size-xl;
+        line-height: 1.7;
+        text-transform: capitalize;
+        color:$dark-blue;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-weight: $font-weight-light;
+        font-size: $font-size-sm-l;
+        line-height: 2;    
+        text-transform: capitalize;
+        color: $dark;
+        margin-bottom: 30px;
+    }
+}
