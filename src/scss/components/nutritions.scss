@@ -3,40 +3,20 @@
     &__container {
 
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+       
     }
 
     &__content {
-        width: 42%;
-        transform: translateY(71px);
+        width: 40%;   
     }
 
     &__images {
-        width: 65%;
-
-        &__picture-1 {
-            position: relative;
-            z-index: 1;
-            bottom: 15px;
-            right: 23px;
-        }
-        
-        &__picture-2 {
-            position: relative;           
-            bottom: 111px;
-            left: 103px;
-        }
-        
-        &__picture-3 {
-            position: relative;   
-            bottom: 178px;               
-        }
-        
-        &__picture-4 {
-            position: relative;                         
-            left: 382px;
-            bottom: 258px;
-        }
+   
+        width: 60%;
+        min-height: 485px;
+        background-image: url('../images/content/Nutritions.png');
+        background-repeat: no-repeat;
     }
 
     &__title {
@@ -46,7 +26,7 @@
     &__subtitle {
         font-weight: $font-weight-semibold;
         font-size: $font-size-xl;
-        line-height: 1.7;
+        line-height: 1.5;
         text-transform: capitalize;
         color:$dark-blue;
         margin-bottom: 10px;

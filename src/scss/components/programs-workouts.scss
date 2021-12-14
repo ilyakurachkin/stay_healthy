@@ -3,7 +3,7 @@
     &__row {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px;
+        margin: -15px 0;
     }
 
     &__col {
@@ -32,7 +32,6 @@
     .card {
 
         &__img {
-            transform: translateX(-23px);
             height: 100%;
         }
 
@@ -66,9 +65,9 @@
 
         &__link {
             color: $programs-color-link;
-            &__vector {
-                margin-left: 15px;
-            }
+        }
+        .arrow {
+            margin-left: 15px;
         }
     }
 }
