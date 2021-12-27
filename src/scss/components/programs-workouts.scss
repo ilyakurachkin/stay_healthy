@@ -20,54 +20,51 @@
     &__subtitle {
         margin: 0 auto;
         width: 60%;
-        font-weight: $font-weight-semibold;
-        font-size: $font-size-xl;
-        line-height: 1.5;
         text-align: center;
         text-transform: capitalize;
         color: $dark;
         margin-bottom: 30px;
+    } 
+}
+.card {
+
+    &__img {
+        height: 100%;
     }
 
-    .card {
+    &__title {
+        font-weight: $font-weight-medium;
+        font-size: $font-size-l;
+        line-height: 1.5;
+        color: $dark;
+    }
 
-        &__img {
-            height: 100%;
-        }
+    &__subtitle {
+        font-weight: $font-weight-regular;
+        font-size: $font-size-md;
+        line-height: 1.8;
+        color: $dark;
+        margin-bottom: 10px;
+    }
+    
+    &__desc {          
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        font-weight: $font-weight-light;
+        font-size: $font-size-sm;
+        line-height: 1.8;
+        color: $Very-dark-gray;
+        margin-bottom: 20px;
+    }
 
-        &__title {
-            font-weight: $font-weight-medium;
-            font-size: $font-size-l;
-            line-height: 1.5;
-            color: $dark;
-        }
-
-        &__subtitle {
-            font-weight: $font-weight-regular;
-            font-size: $font-size-md;
-            line-height: 1.8;
-            color: $dark;
-            margin-bottom: 10px;
-        }
-        
-        &__desc {          
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            text-overflow: ellipsis;
-            font-weight: $font-weight-light;
-            font-size: $font-size-sm;
-            line-height: 1.8;
-            color: $Very-dark-gray;
-            margin-bottom: 20px;
-        }
-
-        &__link {
-            color: $programs-color-link;
-        }
-        .arrow {
-            margin-left: 15px;
-        }
+    &__link {
+        color: $programs-color-link;
+    }
+    
+    .arrow {
+        margin-left: 15px;
     }
 }

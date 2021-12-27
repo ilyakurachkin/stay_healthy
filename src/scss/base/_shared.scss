@@ -12,7 +12,11 @@
     line-height: 1.5;
     text-transform: uppercase;
 }
-
+ .subtitle {
+    font-weight: $font-weight-semibold;
+     font-size: $font-size-xl;
+     line-height: 1.5;
+ }
 .main-button {
     display: inline-flex;
     min-width: 157px;

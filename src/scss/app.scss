@@ -1,13 +1,13 @@
-@import 'base/_vars'; 
-@import 'base/_mixins';
-@import 'base/_normalize';
-@import 'base/_base';
-@import 'base/_shared';  
-@import 'base/_fonts';
-@import 'components/header';
-@import 'components/navigation';
-@import 'components/main'; 
-@import 'components/welcome-club';  
-@import 'components/programs-workouts';
-@import 'components/nutritions';
-
+@import "base/_vars";
+@import "base/_shared";
+@import "base/_mixins";
+@import "base/_normalize";
+@import "base/_base";
+@import "base/_fonts";
+@import "components/header";
+@import "components/navigation";
+@import "components/main";
+@import "components/welcome-club";
+@import "components/programs-workouts";
+@import "components/nutritions";
+@import "components/pricing";
