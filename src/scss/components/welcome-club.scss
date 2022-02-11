@@ -1,7 +1,7 @@
 .welcome-club {
-    background-color: $dark-blue ;
+    background-color: $dark-blue;
     padding: 55px 0 50px;
-    
+
     &__line {
         &:nth-child(1) {
             width: 80%;
@@ -16,13 +16,13 @@
             display: inline-block;
         }
     }
-   
+
     &__title {
         text-align: center;
         color: $white;
         margin-bottom: 10px;
     }
-    &__subtitle {    
+    &__subtitle {
         text-align: center;
         font-weight: $font-weight-bold;
         font-size: $font-size-xll;
@@ -45,9 +45,8 @@
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
-            &>a:not(:last-child){
-                margin-right: 40px;
-            }    
+        & > a:not(:last-child) {
+            margin-right: 40px;
+        }
     }
-    
 }

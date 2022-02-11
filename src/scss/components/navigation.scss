@@ -1,8 +1,7 @@
 .navigation {
-    
     &__list {
         padding: 0;
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
     }
     &__item {
@@ -11,13 +10,13 @@
             margin-right: 0;
         }
     }
-    &__link {  
+    &__link {
         font-weight: $font-weight-light;
         font-size: $font-size-sm;
-        line-height: 1.5; 
+        line-height: 1.5;
         color: $white;
-        &:hover {     
-            font-weight: $font-weight-medium;      
+        &:hover {
+            font-weight: $font-weight-medium;
         }
     }
 }

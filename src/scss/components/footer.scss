@@ -1,0 +1,100 @@
+.footer {
+    padding-top: 50px;
+    border-top: solid 1px #e5e5e5;
+
+    &__row {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 -15px 55px;
+    }
+
+    &__col {
+        width: 20%;
+        padding: 0 15px;
+        &--xl {
+            width: 40%;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        font-weight: $font-weight-extrabold;
+        font-size: $font-size-lg;
+        line-height: 1.5;
+        color: $dark-blue;
+        margin-bottom: 5px;
+    }
+
+    &__desc {
+        font-weight: $font-weight-light;
+        font-size: $font-size-sm-l;
+        line-height: 2;
+        text-transform: capitalize;
+        color: $dark;
+        margin-bottom: 10px;
+    }
+
+    &__subtitle {
+        font-weight: $font-weight-medium;
+        font-size: $font-size-md;
+        line-height: 1.5;
+        color: $dark-blue;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+
+    &__link {
+        font-weight: $font-weight-light;
+        font-size: $font-size-sm-lx;
+        line-height: 1.5;
+        color: $dark;
+    }
+
+    &__copyright {
+        display: block;
+        text-align: center;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-sm;
+        line-height: 1.8;
+        color: $dark;
+        margin-bottom: 20px;
+    }
+}
+
+.social-list {
+    display: flex;
+    flex-wrap: nowrap;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: $Very-light-gray;
+        border-radius: 50%;
+        margin-right: 10px;
+
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+    &__link {
+        font-size: 20px;
+    }
+    .fa-youtube {
+        color: $youtube;
+    }
+    .fa-facebook-f {
+        color: $facebook;
+    }
+    .fa-instagram {
+        color: $instagram;
+    }
+}

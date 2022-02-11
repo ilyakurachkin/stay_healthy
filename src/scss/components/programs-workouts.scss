@@ -1,5 +1,4 @@
 .programs-workouts {
-    
     &__row {
         display: flex;
         flex-wrap: wrap;
@@ -24,12 +23,11 @@
         text-transform: capitalize;
         color: $dark;
         margin-bottom: 30px;
-    } 
+    }
 }
 .card {
-
     &__img {
-        height: 100%;
+        margin-bottom: 20px;
     }
 
     &__title {
@@ -46,8 +44,8 @@
         color: $dark;
         margin-bottom: 10px;
     }
-    
-    &__desc {          
+
+    &__desc {
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -63,7 +61,7 @@
     &__link {
         color: $programs-color-link;
     }
-    
+
     .arrow {
         margin-left: 15px;
     }

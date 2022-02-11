@@ -20,7 +20,7 @@
         flex-wrap: wrap;
         margin: 0 -15px;
     }
-    &__col {  
+    &__col {
         width: 33.3%;
         padding: 0 15px;
     }
@@ -36,7 +36,6 @@
     padding: 30px 0;
     box-shadow: 0px 16px 35px 0px #7090b033;
 
-
     &__popular {
         position: absolute;
         right: 0;
@@ -51,7 +50,6 @@
         text-align: center;
         text-transform: capitalize;
         color: $white;
-        
     }
 
     &__title {
@@ -76,8 +74,9 @@
 
     &__list {
         margin-bottom: 50px;
+        position: relative;
     }
-    
+
     &__item {
         display: flex;
         align-items: center;
@@ -91,13 +90,11 @@
 
         &::before {
             content: "";
-            display: block;
-            position: relative;
-            bottom: 2px;
-            right: 20px;
+            position: absolute;
+            left: 9px;
             border: solid $white;
-            border-width: 0 2px 2px 0;
-            width: 6px;
+            border-width: 0 3px 3px 0;
+            width: 7px;
             height: 10px;
             transform: rotate(45deg);
             z-index: 1;
@@ -106,8 +103,8 @@
         &::after {
             content: "";
             position: absolute;
-            left: 80px;
             border-radius: 50%;
+            left: 0;
             width: 24px;
             height: 24px;
             background: $green;
@@ -133,5 +130,3 @@
         color: $dark-blue;
     }
 }
-
- 
