@@ -1,5 +1,4 @@
 .pricing {
-    min-height: 1060px;
     padding-top: 100px;
     background: linear-gradient(#161d2f 60%, white 40%);
 
@@ -74,15 +73,15 @@
 
     &__list {
         margin-bottom: 50px;
-        position: relative;
     }
 
     &__item {
         display: flex;
         align-items: center;
         flex-shrink: 0;
-        padding: 5px;
-        padding-left: 32px;
+        position: relative;
+        margin: 5px;
+        padding-left: 35px;
         font-weight: $font-weight-light;
         font-size: $font-size-md;
         line-height: 1.5;
@@ -91,29 +90,28 @@
         &::before {
             content: "";
             position: absolute;
-            left: 9px;
-            border: solid $white;
-            border-width: 0 3px 3px 0;
-            width: 7px;
-            height: 10px;
-            transform: rotate(45deg);
-            z-index: 1;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
             border-radius: 50%;
             left: 0;
             width: 24px;
             height: 24px;
             background: $green;
         }
-    }
-}
 
-.price {
-    margin-top: auto;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 9px;
+            border: solid $white;
+            border-width: 0 3px 3px 0;
+            width: 7px;
+            height: 10px;
+            transform: rotate(45deg);
+        }
+    }
+    &__price {
+        margin-top: auto;
+        text-align: center;
+    }
 
     &__cost {
         display: block;
@@ -123,10 +121,9 @@
         color: $dark-blue;
         margin-bottom: 30px;
     }
+
     &__desc {
         font-weight: $font-weight-light;
         font-size: $font-size-md-l;
-        line-height: 1.5;
-        color: $dark-blue;
     }
 }
