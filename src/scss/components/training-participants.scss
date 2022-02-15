@@ -1,6 +1,5 @@
 .training-participants {
-    padding: 100px 0;
-
+    
     &__form {
         width: 570px;
     }
@@ -8,6 +7,7 @@
     .form {
         &__button {
             cursor: pointer;
+            border: 0;
         }
 
         &__address {

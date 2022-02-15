@@ -1,5 +1,6 @@
+
 .footer {
-    padding-top: 50px;
+    padding: 50px 0 20px;
     border-top: solid 1px #e5e5e5;
 
     &__row {
@@ -63,7 +64,6 @@
         font-size: $font-size-sm;
         line-height: 1.8;
         color: $dark;
-        margin-bottom: 20px;
     }
 }
 
@@ -72,6 +72,13 @@
     flex-wrap: nowrap;
 
     &__item {
+        margin-right: 10px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,22 +86,15 @@
         height: 40px;
         background-color: $Very-light-gray;
         border-radius: 50%;
-        margin-right: 10px;
-
-        &:last-of-type {
-            margin: 0;
-        }
-    }
-    &__link {
         font-size: 20px;
-    }
-    .fa-youtube {
-        color: $youtube;
-    }
-    .fa-facebook-f {
-        color: $facebook;
-    }
-    .fa-instagram {
-        color: $instagram;
+            &--youtube {
+                color: $youtube;
+            }
+            &--facebook {
+                color: $facebook;
+            }
+            &--instagram {
+                color: $instagram;
+            }
     }
 }
