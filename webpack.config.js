@@ -1,7 +1,7 @@
 /**
  * Webpack main configuration file
  */
-
+const webpack = require('webpack');
 const path = require('path');
 const fs = require('fs');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -110,6 +110,11 @@ module.exports = {
           },
         },
       ],
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
     }),
   ].concat(htmlPluginEntries),
   target: 'web',
