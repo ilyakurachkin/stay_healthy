@@ -7,6 +7,10 @@
         display: flex;
         flex-wrap: nowrap;
         margin: 0 -15px 55px;
+        @media(max-width:576px) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__col {
@@ -14,6 +18,10 @@
         padding: 0 15px;
         &--xl {
             width: 40%;
+        }
+        @media(max-width:576px) {
+            width: 100%;
+            margin-bottom: 20px;
         }
     }
 
@@ -70,6 +78,10 @@
 .social-list {
     display: flex;
     flex-wrap: nowrap;
+    @media(max-width:576px) {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 
     &__item {
         margin-right: 10px;
@@ -78,6 +90,15 @@
             margin-right: 0;
         }
     }
+
+    $social-colors: (
+        youtube: $youtube,
+        facebook: $facebook,
+        instagram: $instagram
+    );
+
+   
+
     &__link {
         display: flex;
         justify-content: center;
@@ -87,14 +108,12 @@
         background-color: $Very-light-gray;
         border-radius: 50%;
         font-size: 20px;
-            &--youtube {
-                color: $youtube;
+        
+        @each $name, $color in $social-colors {
+            &--#{$name} {
+                color: $color;
             }
-            &--facebook {
-                color: $facebook;
-            }
-            &--instagram {
-                color: $instagram;
-            }
+        }
+        
     }
 }

@@ -13,10 +13,16 @@
 
     &__pricing {
         margin-bottom: 200px;
+        @media(max-width:576px) {
+            margin-bottom: 100px;
+        }
     }
 
     &__about {
         margin-bottom: 200px;
+        @media(max-width:576px) {
+            margin-bottom: 100px;
+        }
     }
 
     &__training-participants {

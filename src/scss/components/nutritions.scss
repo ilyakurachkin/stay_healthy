@@ -2,10 +2,17 @@
     &__container {
         display: flex;
         align-items: center;
+        @media(max-width:992px) {
+            flex-direction: column;
+        }
     }
 
     &__content {
         width: 40%;
+        @media(max-width:992px) {
+            width: 80%;
+            text-align: center;
+        }
     }
 
     &__images {
@@ -14,6 +21,14 @@
         min-height: 485px;
         background-image: url("../images/content/Nutritions.png");
         background-repeat: no-repeat;
+        @media(max-width:992px) {
+            width: 100%;
+            background-position: center;
+            margin: 0 0 35px;
+        }
+        @media(max-width:576px) {
+            background-size: contain;
+        }
     }
 
     &__title {

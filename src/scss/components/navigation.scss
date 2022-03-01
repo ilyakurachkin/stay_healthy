@@ -9,6 +9,9 @@
         &:last-of-type {
             margin-right: 0;
         }
+        @media(max-width: 950px) {
+            margin-right: 50px;
+        }
     }
     &__link {
         font-weight: $font-weight-light;

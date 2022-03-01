@@ -3,11 +3,24 @@
         display: flex;
         flex-wrap: wrap;
         margin: -15px 0;
+        @media(max-width:992px) {
+            align-items: flex-end;
+        }
+        @media(max-width:576px) {
+            flex-direction: column;
+        }
     }
 
     &__col {
         width: 33.3%;
         padding: 0 15px;
+        @media(max-width:992px) {
+            text-align: center;
+        }
+        @media(max-width:576px) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
     }
 
     &__title {
@@ -23,11 +36,15 @@
         text-transform: capitalize;
         color: $dark;
         margin-bottom: 30px;
+        @media(max-width:576px) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
     }
 }
 .card {
     &__img {
-        margin-bottom: 20px;
+        margin: 20px auto;
     }
 
     &__title {
@@ -55,7 +72,13 @@
         font-size: $font-size-sm;
         line-height: 1.8;
         color: $Very-dark-gray;
-        margin-bottom: 20px;
+        width: 60%;
+        margin: 0 auto 20px;
+        @media(max-width:576px) {
+            margin: 10px auto;
+            width: 60%;
+            text-align: center;
+        }
     }
 
     &__link {
