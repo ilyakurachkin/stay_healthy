@@ -18,23 +18,7 @@
 @import "components/footer";  
 
 
- .slick-arrow {
-    &::before {
-        color: #4b4b4b;
-        font-size: 40px;
-        opacity: 0.3;
-    }
- } 
-
- .slick-prev {
-     left: -40px;
- }
  
-.slick-slider {
-    max-width: 1200px;
-    text-align: center;
-    margin: 10px auto;
-}
 
 
 

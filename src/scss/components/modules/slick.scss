@@ -3,4 +3,18 @@ $slick-loader-path: "~slick-carousel/slick/";
 
 @import "~slick-carousel/slick/slick";  
 @import "~slick-carousel/slick/slick-theme.css";
+
+.slick-arrow { 
+    &::before {
+        color: #4b4b4b;
+        font-size: 40px;
+        opacity: 0.3;
+        @media(max-width:992px) {
+            display: none;
+        }
+    }
+ } 
+ .slick-prev {
+     left: -40px;
+ }
  
