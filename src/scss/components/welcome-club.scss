@@ -10,14 +10,14 @@
         &:nth-child(2) {
             width: 80%;
             display: inline-block;
-            @media(max-width:576px) {
+            @media screen and (max-width:576px) {
                 width: 100%;
             }
         }
         &:nth-child(3) {
             width: 50%;
             display: inline-block;
-            @media(max-width:576px) {
+            @media screen and (max-width:576px) {
                 width: 100%;
             }
         }
@@ -46,7 +46,7 @@
         line-height: 2;
         text-transform: capitalize;
         color: $white;
-        @media(max-width:576px) {
+        @media screen and (max-width:576px) {
             width: 100%;
         }
     }

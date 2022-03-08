@@ -1,7 +1,7 @@
 .pricing {
     padding-top: 100px;
     background: linear-gradient(#161d2f 60%, white 40%);
-    @media(max-width:576px) {
+    @media screen and (max-width:576px) {
         background: linear-gradient(#161d2f 50%, white 50%);
     }
 
@@ -15,7 +15,7 @@
         text-align: center;
         color: $white;
         width: 50%;
-        @media(max-width:992px) {
+        @media screen and (max-width:992px) {
             width: 100%;
         }
     }
@@ -24,7 +24,7 @@
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 -15px;
-        @media(max-width:576px) {
+        @media screen and (max-width:576px) {
             flex-direction: column;
             flex-wrap: nowrap;
             align-items: center;
@@ -33,7 +33,7 @@
     &__col {
         width: 33.3%;
         padding: 0 15px;
-        @media(max-width:576px) {
+        @media screen and (max-width:576px) {
             width: 70%;
             margin-bottom: 50px;
         }

@@ -3,19 +3,16 @@
         display: flex;
         flex-wrap: wrap;
         margin: -15px 0;
-        @media(max-width:992px) {
+        @media screen and (max-width:992px) {
             align-items: flex-end;
         }
-        // @media(max-width:576px) {
-        //     flex-direction: column;
-        // }
     }
 
     &__col {
         width: 33.3%;
         padding: 0 15px;
      
-        @media(max-width:576px) {
+        @media screen and (max-width:576px) {
             width: 100%;
             margin-bottom: 50px;
         }
@@ -34,7 +31,7 @@
         text-transform: capitalize;
         color: $dark;
         margin-bottom: 30px;
-        @media(max-width:576px) {
+        @media screen and (max-width:576px) {
             width: 100%;
             margin-bottom: 50px;
         }
@@ -73,7 +70,7 @@
         color: $Very-dark-gray;
         width: 60%;
         margin-bottom: 20px;
-        @media(max-width:576px) {
+        @media screen and (max-width:576px) {
             width: 60%;        
         }
     }

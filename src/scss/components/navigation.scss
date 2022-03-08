@@ -9,7 +9,7 @@
         &:last-of-type {
             margin-right: 0;
         }
-        @media(max-width: 950px) {
+        @media screen and (max-width: 950px) {
             margin-right: 50px;
         }
     }

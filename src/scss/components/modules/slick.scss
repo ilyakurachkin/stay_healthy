@@ -9,7 +9,7 @@ $slick-loader-path: "~slick-carousel/slick/";
         color: #4b4b4b;
         font-size: 40px;
         opacity: 0.3;
-        @media(max-width:992px) {
+        @media screen and (max-width:992px) {
             display: none;
         }
     }
