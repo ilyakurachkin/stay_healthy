@@ -1,19 +1,25 @@
 .programs-workouts {
+
+    &__container {
+        width: 90%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
     &__row {
         display: flex;
         flex-wrap: wrap;
         margin: -15px 0;
         @media screen and (max-width:992px) {
-            align-items: flex-end;
+            width: 100%;
         }
     }
 
     &__col {
         width: 33.3%;
         padding: 0 15px;
-     
         @media screen and (max-width:576px) {
-            width: 100%;
             margin-bottom: 50px;
         }
     }
@@ -34,13 +40,21 @@
         @media screen and (max-width:576px) {
             width: 100%;
             margin-bottom: 50px;
+            font-size: $font-size-l;
         }
     }
  
 }
 .card {
+        @media screen and (max-width:992px) {
+            text-align: center;
+        }
+
     &__img {
         margin-bottom: 20px;
+        @media screen and (max-width:992px) {
+            margin: 0 auto 20px;
+        }
     }
 
     &__title {
@@ -70,8 +84,9 @@
         color: $Very-dark-gray;
         width: 60%;
         margin-bottom: 20px;
-        @media screen and (max-width:576px) {
-            width: 60%;        
+        @media screen and (max-width:992px) {
+            width: 80%;  
+            margin: 0 auto 20px;      
         }
     }
 

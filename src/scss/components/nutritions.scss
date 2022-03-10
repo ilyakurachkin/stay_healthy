@@ -28,6 +28,7 @@
         }
         @media screen and (max-width:576px) {
             background-size: contain;
+            margin: 0;
         }
     }
 
@@ -39,6 +40,9 @@
         text-transform: capitalize;
         color: $dark-blue;
         margin-bottom: 10px;
+        @media screen and (max-width:576px) {
+            font-size: $font-size-l;
+        }
     }
 
     &__desc {
