@@ -5,8 +5,9 @@
 
     &__row {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin: 0 -15px 55px;
+
         @media screen and (max-width:576px) {
             flex-direction: column;
             text-align: center;
@@ -16,16 +17,25 @@
     &__col {
         width: 20%;
         padding: 0 15px;
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 20px;
+        }
         &--xl {
             width: 40%;
         }
-
+    
         @media screen and (max-width:992px) {
-            width: 100%;
+            width: 50%;
+            
         }
 
         @media screen and (max-width:576px) {
             margin-bottom: 20px;
+            width: 100%;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -67,6 +77,9 @@
         font-size: $font-size-sm-lx;
         line-height: 1.5;
         color: $dark;
+        &--wr {
+            word-break: break-all;
+        }
     }
 
     &__copyright {
@@ -101,7 +114,6 @@
         instagram: $instagram
     );
 
-   
 
     &__link {
         display: flex;
@@ -111,13 +123,12 @@
         height: 40px;
         background-color: $Very-light-gray;
         border-radius: 50%;
-        font-size: 20px;
-        
+        font-size: 20px;     
         @each $name, $color in $social-colors {
             &--#{$name} {
                 color: $color;
             }
-        }
-        
+        }    
     }
+   
 }
